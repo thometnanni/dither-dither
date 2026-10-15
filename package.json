@@ -7,7 +7,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/thometnanni/dither-dither"
+    "url": "git+https://github.com/thometnanni/dither-dither.git"
   },
   "publishConfig": {
     "access": "public"
