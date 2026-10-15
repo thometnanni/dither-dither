@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dither-dither</title>
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/page/style.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
 
@@ -24,13 +24,7 @@
             ></dither-dither>
           </div>
           <div class="video" data-dark="20,20,90" data-light="255,145,55">
-            <dither-dither
-              src="./hermannstrasse.mp4"
-              video
-              immediate
-              freeze="false"
-              width="60"
-            ></dither-dither>
+            <dither-dither src="./hermannstrasse.mp4" video immediate freeze="false" width="60"></dither-dither>
           </div>
           <div class="video" data-dark="15,70,40" data-light="220,80,210">
             <dither-dither
@@ -52,14 +46,12 @@
       <h1>dither-dither</h1>
 
       <p>
-        This is a web component for monochrome dithering. It works on images and
-        videos. It's based on shaders and should be quite fast. It uses a blue
-        noise threshold map. But you can also specify a custom threshold map.
+        This is a web component for monochrome dithering. It works on images and videos. It's based on shaders and
+        should be quite fast. It uses a blue noise threshold map. But you can also specify a custom threshold map.
       </p>
 
       <p>
-        It works with small media files – in most cases you'll get away with
-        using
+        It works with small media files – in most cases you'll get away with using
         <a href="/hermannstrasse.jpg">images</a>
         and <a href="/hermannstrasse.mp4">videos</a> of atrocious quality
       </p>
@@ -69,12 +61,10 @@
       <pre><code>&lt;dither-dither src="…"&gt;&lt;/dither-dither&gt;</code></pre>
 
       <p style="text-align: center; margin-bottom: 2rem; margin-top: 5rem">
-        <a href="https://github.com/fidelthomet/dither-dither"
-          >source on github</a
-        >
+        <a href="https://github.com/fidelthomet/dither-dither">source on github</a>
       </p>
     </section>
 
-    <script type="module" src="/src/script.js"></script>
+    <script type="module" src="/page/main.js"></script>
   </body>
 </html>

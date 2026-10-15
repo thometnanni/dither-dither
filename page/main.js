@@ -10,8 +10,7 @@ const COLUMNS = [...document.querySelectorAll(".video")].map((media) => ({
 
 const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
 
-const mix = (a, b, t) =>
-  `rgb(${a.map((c, i) => Math.round(c + (b[i] - c) * t)).join(", ")})`;
+const mix = (a, b, t) => `rgb(${a.map((c, i) => Math.round(c + (b[i] - c) * t)).join(", ")})`;
 
 function update() {
   const rect = stage.getBoundingClientRect();
@@ -21,11 +20,7 @@ function update() {
   const size = Math.round(50 + (maxSize - 50) * progress);
 
   // duotone intensity
-  const duotone = clamp(
-    Math.min((progress - 0.2) / 0.25, (1 - progress) / 0.25),
-    0,
-    1,
-  );
+  const duotone = clamp(Math.min((progress - 0.2) / 0.25, (1 - progress) / 0.25), 0, 1);
 
   for (const { media, dither, dark, light } of COLUMNS) {
     media.style.width = media.style.height = `${size}px`;
