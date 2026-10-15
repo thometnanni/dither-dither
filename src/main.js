@@ -125,10 +125,12 @@ class DitherDither extends HTMLElement {
     this.darkColor = [0, 0, 0, 1];
     this.intersecting = false;
   }
-  static observedAttributes = ["src", "threshold-map", "dark", "light", "width", "height", "object-fit"];
+  static observedAttributes = ["src", "threshold-map", "dark", "light", "width", "height", "object-fit", "alt"];
 
   async attributeChangedCallback(name, _, value) {
     switch (name) {
+      case "alt":
+        this.canvas.setAttribute("aria-label", value ?? "");
       case "src":
         this.mediaSrc = value;
         await this.initMedia();
@@ -199,7 +201,6 @@ class DitherDither extends HTMLElement {
     this.root.appendChild(this.canvas);
 
     this.canvas.setAttribute("role", "img");
-    this.canvas.setAttribute("aria-label", this.getAttribute("alt") ?? "");
 
     this.ctx = this.canvas.getContext("2d");
   }
