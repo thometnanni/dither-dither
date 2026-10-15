@@ -13,30 +13,16 @@
       <div class="hero-sticky">
         <h1 class="bg-title">‹dither-dither›</h1>
         <div class="videos">
-          <div class="video" data-dark="90,20,60" data-light="255,210,60">
-            <dither-dither
-              src="./hermannstrasse.mp4"
-              video
-              immediate
-              freeze="false"
-              width="60"
-              threshold-map="./bayer8x8.png"
-            ></dither-dither>
-          </div>
-          <div class="video" data-dark="20,20,90" data-light="255,145,55">
-            <dither-dither src="./hermannstrasse.mp4" video immediate freeze="false" width="60"></dither-dither>
-          </div>
-          <div class="video" data-dark="15,70,40" data-light="220,80,210">
-            <dither-dither
-              src="./hermannstrasse.mp4"
-              video
-              immediate
-              freeze="false"
-              width="60"
-              threshold-map="./lines8.png"
-            ></dither-dither>
-          </div>
+          <!-- <div class="video" data-dark="90,20,60" data-light="255,210,60"> -->
+          <dither-dither src="./hermannstrasse.mp4" width="60" threshold-map="./bayer8x8.png"></dither-dither>
+          <!-- </div>
+          <div class="video" data-dark="20,20,90" data-light="255,145,55"> -->
+          <dither-dither src="./hermannstrasse.mp4" width="60"></dither-dither>
+          <!-- </div>
+          <div class="video" data-dark="15,70,40" data-light="220,80,210"> -->
+          <dither-dither src="./hermannstrasse.mp4" width="60" threshold-map="./bayer2x2.png"></dither-dither>
         </div>
+        <!-- </div> -->
       </div>
     </section>
 
@@ -61,7 +47,7 @@
       <pre><code>&lt;dither-dither src="…"&gt;&lt;/dither-dither&gt;</code></pre>
 
       <p style="text-align: center; margin-bottom: 2rem; margin-top: 5rem">
-        <a href="https://github.com/fidelthomet/dither-dither">source on github</a>
+        <a href="https://github.com/thometnanni/dither-dither">source on github</a>
       </p>
     </section>
 
