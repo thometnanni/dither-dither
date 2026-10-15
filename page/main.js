@@ -58,3 +58,9 @@ function onScroll() {
 window.addEventListener("scroll", onScroll, { passive: true });
 window.addEventListener("resize", onScroll);
 update();
+
+for (const example of document.querySelectorAll(".example")) {
+  const preview = example.querySelector("dither-dither");
+  const attrs = [...preview.attributes].map(({ name, value }) => ` ${name}="${value}"`).join("");
+  example.querySelector("pre code").textContent = `<dither-dither${attrs}></dither-dither>`;
+}

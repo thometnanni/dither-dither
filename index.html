@@ -43,6 +43,89 @@
       <pre><code>import 'dither-dither'</code></pre>
       <pre><code>&lt;dither-dither src="…"&gt;&lt;/dither-dither&gt;</code></pre>
 
+      <section class="examples">
+        <div class="example">
+          <dither-dither src="./hermannstrasse.jpg" width="100" height="100"></dither-dither>
+          <div>
+            <h3>image</h3>
+            <pre><code></code></pre>
+          </div>
+        </div>
+
+        <div class="example">
+          <dither-dither src="./hermannstrasse.mp4" width="100" height="100"></dither-dither>
+          <div>
+            <h3>video</h3>
+            <pre><code></code></pre>
+          </div>
+        </div>
+
+        <div class="example">
+          <dither-dither
+            threshold-map="./bayer8x8.png"
+            width="100"
+            height="100"
+            src="./hermannstrasse.jpg"
+          ></dither-dither>
+          <div>
+            <h3>custom threshold map</h3>
+            <pre><code></code></pre>
+          </div>
+        </div>
+
+        <div class="example">
+          <dither-dither
+            dark="navy"
+            light="#ffd700"
+            width="100"
+            height="100"
+            src="./hermannstrasse.jpg"
+          ></dither-dither>
+          <div>
+            <h3>colours</h3>
+            <pre><code></code></pre>
+          </div>
+        </div>
+
+        <div class="example">
+          <div class="gradient">
+            <dither-dither
+              dark="rgba(200, 0, 127, 0.5)"
+              light="transparent"
+              width="100"
+              height="100"
+              src="./hermannstrasse.jpg"
+            ></dither-dither>
+          </div>
+          <div>
+            <h3>transparency</h3>
+            <pre><code></code></pre>
+          </div>
+        </div>
+
+        <div class="example">
+          <dither-dither width="50" height="100" src="./hermannstrasse.jpg"></dither-dither>
+          <div>
+            <h3>stretch</h3>
+            <pre><code></code></pre>
+          </div>
+        </div>
+        <div class="example">
+          <dither-dither object-fit="cover" width="50" height="100" src="./hermannstrasse.jpg"></dither-dither>
+          <div>
+            <h3>cover</h3>
+            <pre><code></code></pre>
+          </div>
+        </div>
+        <div class="example">
+          <dither-dither object-fit="contain" width="50" height="100" src="./hermannstrasse.jpg"></dither-dither>
+          <div>
+            <h3>contain</h3>
+            <pre><code></code></pre>
+          </div>
+        </div>
+      </section>
+
       <p class="releases">
         <a href="https://github.com/thometnanni/dither-dither">source on github</a>
         <a href="https://www.npmjs.com/package/@krisenstab/dither-dither">package on npm</a>

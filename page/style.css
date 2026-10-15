@@ -86,11 +86,49 @@ body {
 }
 
 .outro .releases {
-  margin-bottom: 2rem;
-  margin-top: 5rem;
+  margin: 5rem 0;
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+
+.outro .examples {
+  margin-top: 4rem;
+}
+
+.outro .example {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.outro .example dither-dither {
+  flex: none;
+  width: 100px;
+  height: 100px;
+}
+
+.outro .example .gradient {
+  flex: none;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(90deg, rgb(232, 196, 250), rgb(216, 238, 107));
+}
+
+.outro .example > div {
+  min-width: 0;
+  flex: 1;
+}
+
+.outro .example h3 {
+  margin: 0 0 0.5rem;
+  font-weight: normal;
+}
+
+.outro .example pre {
+  margin: 0;
 }
 
 .scroll-hint {
