@@ -85,6 +85,14 @@ body {
   text-wrap: pretty;
 }
 
+.outro .releases {
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
 .scroll-hint {
   position: fixed;
   bottom: 1.5rem;
