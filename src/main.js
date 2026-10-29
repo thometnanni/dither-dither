@@ -96,8 +96,8 @@ sharedCanvas.addEventListener("webglcontextrestored", initShared);
 function loadMedia(url, isVideo, crossOrigin) {
   return new Promise((resolve) => {
     const el = isVideo ? document.createElement("video") : new Image();
-    el.src = url;
     el.crossOrigin = crossOrigin;
+    el.src = url;
     if (isVideo) {
       el.playsInline = true;
       el.muted = true;
