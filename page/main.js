@@ -33,9 +33,6 @@ function update() {
 
   videoWrapper.style.transform = `translateY(${20 * (1 - progress)}vh)`;
 
-  // duotone intensity
-  const duotone = clamp(Math.min((progress - 0.2) / 0.25, (1 - progress) / 0.25), 0, 1);
-
   for (const { dither, dark, light } of COLUMNS) {
     dither.setAttribute("width", size);
     dither.setAttribute("dark", mix([0, 0, 0], dark, progress));
