@@ -170,7 +170,6 @@ class DitherDither extends HTMLElement {
   }
 
   async connectedCallback() {
-    this.crossOrigin = this.getAttribute("cross-origin");
     this.immediate = this.getAttribute("immediate") != null;
 
     this.root = this.attachShadow({ mode: "closed" });
@@ -213,7 +212,7 @@ class DitherDither extends HTMLElement {
   async initMedia() {
     this.stop();
     this.media?.pause?.();
-    this.media = await loadMedia(this.mediaSrc, this.isVideo(), this.crossOrigin);
+    this.media = await loadMedia(this.mediaSrc, this.isVideo(), this.getAttribute("cross-origin"));
   }
   async initThreshold() {
     const src = this.thresholdSrc ?? fallbackThreshold;
