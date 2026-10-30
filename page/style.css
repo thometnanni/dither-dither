@@ -92,6 +92,12 @@ body {
   gap: 2rem;
 }
 
+.outro .created-by {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
 .outro .examples {
   margin-top: 4rem;
 }
