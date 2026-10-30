@@ -86,14 +86,15 @@ body {
 }
 
 .outro .releases {
-  margin: 5rem 0;
+  margin-top: 5rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .outro .created-by {
-  margin: 5rem 0;
+  margin: 2rem 0 5rem;
   display: flex;
   justify-content: center;
 }
